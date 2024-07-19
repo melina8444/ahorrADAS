@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>AhorrADAS!</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- NAVEGCION -->
+        <nav class="navegacion">
+            <!-- TITULO -->
+            <h1 class="titulo">
+                <i class="fas fa-wallet mr-2 links" aria-hidden="true"></i>
+                <a href="#">AhorrADAS</a>
+            </h1>
+            <!-- LINKS DE NAVEGACION -->
+            <div class="link_navega">
+                <a href="#" class="links">
+                    <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                    Balance
+                </a>
+                <a href="#" class="links">
+                    <i class="fas fa-tag mr-2" aria-hidden="true"></i>
+                    Categorías
+                </a>
+                <a href="#" class="links">
+                    <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>
+                    Reportes
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div class="contenedor_prin">
+            <div class="balance_filtros">
+                <!-- SECCION BALANCE -->
+                <section class="seccion_balance">
+                    <div>
+                        <h2 class="balance">Balance</h2>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>Ganancias</td>
+                            <td class="ganancias_verde">+$0</td>
+                        </tr>
+                        <tr>
+                            <td>Gastos</td>
+                            <td class="gastos_rojo">-$0</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="total_negrita">$0</td>
+                        </tr>
+
+                    </table>
+                </section>
+
+
+                <!-- SECCION FILTROS -->
+                <section class="seccion_filtros">
+                    <div class="filtros">
+                        <h2 class="titulo_filtros">Filtros</h2>
+                        <p class="ocultar_filtros">Ocultar Filtros</p>
+                    </div>
+
+                    <div class="principal">
+                        <label for="">Tipo</label>
+                        <select name="tipo" id="tipo">
+                            <option value="todos">Todos</option>
+                            <option value="gastos">Gastos</option>
+                            <option value="ganancias">Ganancias</option>
+                        </select>
+
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria" id="categoria">
+                            <option value="todas">Todas</option>
+                            <option value="comida">Comida</option>
+                            <option value="servicios">Servicios</option>
+                        </select>
+
+                        <label for="desde">Desde</label>
+                        <input type="date" name="desde" id="desde">
+
+                        <label for="ordenar">Ordenar</label>
+                        <select name="ordenar" id="ordenar">
+                            <option value="mas_reciente">Más reciente</option>
+                            <option value="menos_reciente">Menos reciente</option>
+                            <option value="mayor_monto">Mayor monto</option>
+                            <option value="menor_monto">Menor monto</option>
+                            <option value="a_z">A/Z</option>
+                            <option value="z_a">Z/A</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
+
+            <!-- SECCION OPERACIONES -->
+            <section class="seccion_operaciones">
+                <div class="titulo_y_boton">
+                    <h2 class="titulo_operaciones">Operaciones</h2>
+                    <button class="btn_nueva_operacion" type="submit">+ Nueva operación</button>
+                </div>
+                <img class="img_billetera" src="./img/billetera.png" alt="imagen principal">
+                <h4 class="sin_resultados">Sin resultados</h4>
+                <p class="cambia_filtros">Cambia los filtros o agrega operaciones</p>
+            </section>
+        </div>
+
+
+
+
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

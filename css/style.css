@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* HEADER */
+  .header{
+    background-color: #00d1b2;
+    height: 16vh;
+  }
+  .navegacion{
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+  }
+
+  .titulo{
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    
+  }
+
+  .link_navega{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1rem;
+    
+    margin-left: 50%;
+  }
+
+  a, .links{
+    text-decoration: none;
+    color: #fafafa;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+  }
+
+  .links:hover{
+    color: #636366;
+  }
+
+  /* MAIN */
+  .main{
+    background-color: #b9b9c0;
+  }
+
+/* CONTENEDOR PRINCIPAL  */
+.contenedor_prin{
+    
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin-left: 10%;
+    
+}
+/* SECCION BALANCES */
+
+.balance_filtros{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 40%;
+}
+
+
+.table {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+th, td {
+    
+    border:0;
+    padding: 10px;
+    text-align: left;
+}
+
+.ganancias_verde{
+    color: #00d1b2;
+}
+
+.gastos_rojo{
+    color: red;
+}
+
+.total_negrita{
+    color: black;
+    font-weight: bold;
+}
+
+/* SECCION BALANCE Y FILTROS */
+.seccion_balance, .seccion_filtros{
+    /* margin-top: 20px; */
+    /* border: 1px solid #636366; */
+    width: 100%;
+    box-shadow: 0 2px 4px #4544441a;
+    border-radius: 8px;
+    padding: 17px;
+    background-color: #e7e3df;
+}
+
+/* SECCION FILTROS */
+
+.seccion_filtros{
+    margin-top: 20px;
+}
+
+.filtros{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.ocultar_filtros{
+    cursor: pointer;
+    color: blue;
+}
+
+.ocultar_filtros:hover{
+    color: #636366;
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select{
+    width: auto;
+    border-radius: 8px;
+    padding: 7px;
+    border: 2px solid #636366;
+    color: #636366;
+}
+
+/* SECCION OPERACIONES */
+.seccion_operaciones{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 30px;
+    /* border: 1px solid #636366; */
+    box-shadow: 10px 2px 4px #4544441a;
+    border-radius: 8px;
+    background-color: #cecac7;
+}
+
+.titulo_y_boton{
+    display: flex;
+    margin: 20px;
+    
+    /* background-color: #6e63d2; */
+    
+  
+   
+}
+
+.titulo_operaciones{
+    display: flex;
+    margin-right: 30%;
+    
+}
+
+.btn_nueva_operacion{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 5vh;
+    width: 280px;
+    background-color: #00d18f;
+    border-radius: 10px;
+    border: 0;
+    padding: 15px;
+    color: #fafafa;
+    font-weight: bold;
+    
+} 
+.btn_nueva_operacion:hover{
+    background-color: #87878b;
+}
+
+.img_billetera{
+    width: 60%;
+    margin-top: 50px;
+}
+
+.sin_resultados, .cambia_filtros{
+    margin: 20px;
+    color: #636366;
+}
+
+.sin_resultados{
+    font-size: 2rem;
+    
+}
