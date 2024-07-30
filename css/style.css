@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
   /* HEADER */
@@ -47,6 +48,7 @@
   /* MAIN */
   .main{
     background-color: #b9b9c0;
+   
   }
 
 /* CONTENEDOR PRINCIPAL  */
@@ -58,6 +60,8 @@
     margin-left: 10%;
     
 }
+
+
 /* SECCION BALANCES */
 
 .balance_filtros{
@@ -161,6 +165,7 @@ input, select{
     box-shadow: 10px 2px 4px #4544441a;
     border-radius: 8px;
     background-color: #cecac7;
+    height: 200px;
 }
 
 .titulo_y_boton{
@@ -209,5 +214,59 @@ input, select{
 
 .sin_resultados{
     font-size: 2rem;
+    
+}
+
+/* SECCION NUEVA OPERACION */
+
+/* .seccion_operaciones{
+    display: flex;
+    background-color: rgb(98, 98, 185);
+} */
+
+.tit_nuevaOpe{
+    color: crimson;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    gap: 20px;
+    border: 2px solid #636366;
+    width: 50%;
+    
+}
+
+.botonAgregar{
+    background-color: #00d1b2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lista{
+    list-style-type: none;
+    border: 1px dashed blueviolet;
+    margin: 15px;
+    
+    
+    
+}
+
+.botonEliminar{
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+.listaOperaciones{
+    /* border: 3px solid black; */
+   text-align: center;
+   width: 300px;
+   margin: auto;
     
 }

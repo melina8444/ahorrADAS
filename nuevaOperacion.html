@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Melina Yangüez">
+    <!-- Facebook, Open graph -->
+    <meta property="og:title" content="AhorrAdas">
+    <meta property="og:description" content="Listado de AhorrADAS">
+    <meta property="og:type" content="article">
+    <meta property="og:site name" content="AhorrADAS">
+   
+    <meta property="og:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Melina Yangüez">
+    <meta property="twitter:description" content="Puedes llevar tus Ganancias y saber tus gastos">
+    <meta property="twitter:image" content="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>AhorrADAS!</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- NAVEGCION -->
+      <nav class="navegacion">
+        <!-- TITULO -->
+        <h1 class="titulo">
+          <i class="fas fa-wallet mr-2 links" aria-hidden="true"></i>
+          <a href="./index.html">AhorrADAS</a>
+        </h1>
+        <!-- LINKS DE NAVEGACION -->
+        <div class="link_navega">
+          <a href="#" class="links">
+            <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+            Balance
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-tag mr-2" aria-hidden="true"></i>
+            Categorías
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>
+            Reportes
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main_nuevaOpe">
+      <!-- CONTENEDOR PRINCIPAL -->
+      
+
+      <section class="seccion_operaciones">
+        <h2 class="tit_nuevaOpe">Nueva Operación</h2>
+
+        <form id="formulario" action="#">
+          <label for="descripcion">Descripcion</label>
+          <input type="text" name="descripcion" id="input_descripcion" placeholder="Ingrese una descripcion"/>
+          <!-- <label for="estado">Estado</label>
+          <input type="checkbox" name="estado" id="estado" /> -->
+          <button id="botonAgregar" class="botonAgregar" type="submit">Agregar</button>
+        </form>
+      </section>
+    </main>
+
+    <ul id="listaOperaciones" class="listaOperaciones">
+        
+    </ul>
+    <script src="app.js"></script>
+  </body>
+</html>
